@@ -1,0 +1,49 @@
+{
+    "data": [
+    {
+        "nombre": "Nautilus",
+        "imagen": "../assets/nautilus.webp",
+        "precio": 18000,
+        "efecto": "Delay y Chorus",
+        "seccion": "./nautilus.html",
+        "id": "1",
+        "cantidad": 1
+    },
+    {
+        "nombre": "Lighthouse",
+        "imagen": "../assets/lighthouse.webp",
+        "precio": 18000,
+        "efecto": "Phaser analógico",
+        "seccion": "./lighthouse.html",
+        "id": "2",
+        "cantidad": 1
+    },
+    {
+        "nombre": "Andromeda",
+        "imagen": "../assets/andromeda.webp",
+        "precio": 20000,
+        "efecto": "Reverb digital",
+        "seccion": "./andromeda.html",
+        "id": "3",
+        "cantidad": 1
+    },
+    {
+        "nombre": "Apocalipsis",
+        "imagen": "../assets/apocalipsis.webp",
+        "precio": 20000,
+        "efecto": "Overdrive",
+        "seccion": "./apocalipsis.html",
+        "id": "4",
+        "cantidad": 1
+    },
+    {
+        "nombre": "Fuzzilla",
+        "imagen": "../assets/fuzzilla.webp",
+        "precio": 20000,
+        "efecto": "Distorsion",
+        "seccion": "./fuzzila.html",
+        "id": "5",
+        "cantidad": 1
+    }
+]
+}

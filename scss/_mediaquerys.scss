@@ -1,0 +1,90 @@
+@media screen and (min-width: 576px) {
+    .main {
+        #tarjetas {
+            .card {
+                max-width: 70vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        .logo {
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .main {
+        #tarjetas {
+            .card {
+                max-width: 50vw;
+            }
+        }
+        .pedales {
+            @include flex(row, center, center, wrap);
+            max-width: 90vw;
+    
+            #pedal {
+                width: 50%;
+            }
+    
+            #descripcion {
+                width: 50%;
+            }
+        }
+    
+        .carruselPedales {
+            @include flex(row-reverse !important, center, center, wrap); 
+    
+            #carrusel {
+                width: 50%;
+            }
+    
+            #controles {
+                width: 50%; 
+                @include flex(column, center, center, wrap);
+    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        .logo {
+            img {
+                width: 30%;
+            }
+        }
+    }
+
+    .main {
+        #tarjetas {
+            #card {
+                width: 32%;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .footer {
+        .contacto {
+            .parrafo {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        #tarjetas {
+            .card {
+                max-width: 46vw;
+            }
+        }
+    }
+}

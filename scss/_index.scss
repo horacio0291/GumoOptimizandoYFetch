@@ -1,0 +1,221 @@
+//Body -->
+body {
+    background-color: $primaryColor;
+    @include links();
+}
+
+//Header -->
+.header {
+    max-width: 100vw;
+
+    .logo {
+        max-width: 100vw;
+        @include flex (row, center, center, wrap);
+        margin-bottom: 3rem;
+
+        img {
+            max-width: 50%;
+            margin: 3rem;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            width: 100%;
+            color: $textColor;
+        }
+    }
+
+}
+
+#logoTexto{
+    
+                font-family: 'Oleo Script', cursive !important;
+            }
+
+
+//Main - Cards -->
+
+.main {
+    max-width: 100vw;
+    @include flex (row, center, center, wrap);
+
+    #tarjetas {
+        max-width: 90vw;
+        @include flex (row, center, center, wrap);
+
+        .card {
+            width: 100%;
+            @include cardShadow();
+        }
+
+        .cardsBoton {
+            width: 100%;
+            button {
+                margin-top: 3rem;
+
+                a {
+                    color: $primaryColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+//Footer -->
+
+.footer {
+    max-width: 100vw;
+    @include flex (row, center, center, wrap);
+
+    .menu {
+        width: 100%;
+        @include flex (row, center, center, wrap);
+        padding: 3rem;
+        margin-right: 2rem;
+
+        .links {
+            @include flex (column, center, center, wrap);
+
+            li {
+                text-align: center;
+                padding: 1rem;
+
+                a {
+                    @include links();
+                    color: $secondaryColor;
+                    font-size: 1.2rem;
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .contacto {
+        width: 100%;
+        @include flex (column, center, center, wrap);
+
+        p {
+            font-size: 1.2rem;
+            color: $secondaryColor;
+            max-width: 90%;
+        }
+
+        .mediosDeContacto {
+            width: 100%;
+            @include flex (row, center, center, wrap);
+            
+            .contenedorContacto {
+                width: 100%;
+
+                i {
+                    color: $secondaryColor;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .consultas {
+        width: 100%;
+        .consultasFormulario {
+            height: 100vh;
+            @include flex (column, space-between, center, nowrap);
+            h2 {
+                margin-top: 2.5rem;
+                font-size: 2rem;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                width: 80vw;
+                height: 8vh;
+                text-align: center;
+                border: 2px solid #808080;
+                border-radius: 2px;
+            }
+
+            .consultasFormularioConsulta {
+                textarea {
+                    width: 80vw;
+                    height: 20vh;
+                    font-size: 1rem;
+                    border: 2px solid #808080;
+                    border-radius: 2px;
+                }
+            }
+
+            .consultasFormularioSubmit {
+                input[type="submit"] {
+                    position: relative;
+                    display: inline-block;
+                    margin: 15px;
+                    padding: 15px 30px;
+                    text-align: center;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    color: $secondaryColor;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: ease-out 0.5s;
+                    border-radius: 30px;
+                    border: 2px solid $secondaryColor;
+                    border-radius: 10px;
+                    box-shadow: inset 0 0 0 0 $secondaryColor;
+
+                    &:hover {
+                        color: #fff;
+                        box-shadow: inset 0 -100px 0 0 #1a181f;
+                    }
+                }
+            }
+        }
+    }
+
+    .redes{
+        width: 100%;
+        .encabezadoRedes{
+            color: $secondaryColor;
+        }
+        .iconosRedes{
+            a{
+                @include links();
+                i{
+                    color: $secondaryColor;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+//Whatsapp -->
+.whatsapp-icon {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 998;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px none #000;
+    border-radius: 40px;
+    background-color: #fff;
+    background-image: url(../assets/whatsapp.png);
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 15px 0 #928c8c;
+    opacity: 1;
+    transition: box-shadow 200ms ease;
+    text-decoration: none;
+}

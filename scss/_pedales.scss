@@ -1,0 +1,30 @@
+.main {
+    .pedales {
+        @include flex(row, center, center, wrap);
+        max-width: 90vw;
+
+        .pedal {
+            width: 100%;
+        }
+
+        .descripcion {
+            width: 100%;
+        }
+    }
+
+    .carruselPedales {
+        @include flex(row, center, center, wrap);
+        max-width: 90vw;
+
+        .carrusel {
+            width: 100%;
+        }
+
+        .controles {
+            width: 100%;
+            @include flex(column, center, center, wrap);
+
+        }
+    }
+
+}
